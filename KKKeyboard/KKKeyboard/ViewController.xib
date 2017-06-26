@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="KKKeyboard" customModuleProvider="target">
+            <connections>
+                <outlet property="speakLbl" destination="Vvp-n2-ZSO" id="DrS-ZO-mHZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pTj-2t-RQR">
+                    <rect key="frame" x="0.0" y="612" width="375" height="55"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gnu-bh-4Jp">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="0.5"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="5DY-NZ-WiJ"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aWS-3n-Fmf">
+                            <rect key="frame" x="10" y="46.5" width="355" height="0.5"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="yfM-45-0zE"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="有话要说..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vvp-n2-ZSO">
+                            <rect key="frame" x="10" y="8.5" width="355" height="38"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Gnu-bh-4Jp" firstAttribute="leading" secondItem="pTj-2t-RQR" secondAttribute="leading" id="6hb-vk-oHi"/>
+                        <constraint firstAttribute="trailing" secondItem="Vvp-n2-ZSO" secondAttribute="trailing" constant="10" id="JN5-2l-uIP"/>
+                        <constraint firstItem="Vvp-n2-ZSO" firstAttribute="leading" secondItem="pTj-2t-RQR" secondAttribute="leading" constant="10" id="TV0-oO-dB5"/>
+                        <constraint firstAttribute="trailing" secondItem="aWS-3n-Fmf" secondAttribute="trailing" constant="10" id="Xca-vE-Fkr"/>
+                        <constraint firstAttribute="bottom" secondItem="aWS-3n-Fmf" secondAttribute="bottom" constant="8" id="evY-Ra-Yq4"/>
+                        <constraint firstItem="Vvp-n2-ZSO" firstAttribute="top" secondItem="Gnu-bh-4Jp" secondAttribute="bottom" constant="8" id="jYh-Ja-wgn"/>
+                        <constraint firstAttribute="trailing" secondItem="Gnu-bh-4Jp" secondAttribute="trailing" id="kS0-7E-j2I"/>
+                        <constraint firstItem="aWS-3n-Fmf" firstAttribute="leading" secondItem="pTj-2t-RQR" secondAttribute="leading" constant="10" id="pkd-NC-k8e"/>
+                        <constraint firstItem="Gnu-bh-4Jp" firstAttribute="top" secondItem="pTj-2t-RQR" secondAttribute="top" id="ppu-wb-KIr"/>
+                        <constraint firstItem="aWS-3n-Fmf" firstAttribute="top" secondItem="Vvp-n2-ZSO" secondAttribute="bottom" id="xGw-ih-oYA"/>
+                        <constraint firstAttribute="height" constant="55" id="ymu-D4-hUo"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="pTj-2t-RQR" secondAttribute="bottom" id="7LC-Rd-3PI"/>
+                <constraint firstItem="pTj-2t-RQR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pXd-21-g9t"/>
+                <constraint firstAttribute="trailing" secondItem="pTj-2t-RQR" secondAttribute="trailing" id="qyu-rU-e43"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>
